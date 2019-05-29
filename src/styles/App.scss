@@ -1,0 +1,189 @@
+@import url(http://allfont.ru/allfont.css?fonts=montserrat);
+@import url(https://fonts.googleapis.com/css?family=Playball);
+
+@font-face {
+  font-family: "Rage Italic";
+  src: url("../assets/fonts/Rage Italic/Rage Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mainMenu {
+
+  &__row1 {
+    display: flex;
+    flex-direction: row;
+    height: 89px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb( 240, 242, 247 );
+    padding: 0 115px;
+  }
+
+  &__menuBurger {
+    padding-right: 42px;
+    border-right: 2px solid rgb( 240, 242, 247 );
+    height: 89px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    color: rgb( 58, 64, 91 );
+    font-family: 'Playball', cursive;
+    font-size: 40px;
+  }
+
+  &__menu__nav{
+    display: flex;
+    margin: 0px;
+    list-style: none;
+    margin-right: 124px;
+
+    .nav__item {
+
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        font-family: 'Montserrat', arial;
+        color: rgb(52, 62, 92);
+        padding-right: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__cart {
+    font-family: 'Montserrat', arial;
+    color: rgb( 52, 62, 92 );
+    font-size: 14px;
+    font-weight: bold;
+
+    span {
+      border-radius: 50%;
+      background-color: #e3e8f0;
+      display: inline-block;
+      margin: 0px 24px 0px 5px;
+      padding: 5px;
+      width: 21px;
+      text-align: center;
+    }
+  }
+
+  &__button-sign {
+    border-width: 2px;
+    border-color: #e3e8f0;
+    border-style: solid;
+    border-radius: 30px;
+    margin: 8px;
+    padding: 7px 17px;
+
+    a {
+      text-decoration: none;
+      font-family: 'Montserrat', arial;
+      color: rgb( 52, 62, 92 );
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  &__row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 56px;
+    align-items: center;
+    padding: 0 115px;
+  }
+
+
+  &__support {
+  margin-left: 40%;
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      font-family: 'Montserrat', arial;
+      color: rgb( 185, 190, 209 );
+      padding-right: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__menu{
+    &__nav-categories{
+      display: flex;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      width: 120%;
+
+      .nav__item {
+
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          font-family: 'Montserrat', arial;
+          color: rgb( 185, 190, 209 );
+          padding-right: 50px;
+          font-weight: bold;
+          text-transform: uppercase;
+
+          &:nth-child(2){
+            color: rgb( 52, 62, 92 );
+          }
+        }
+
+
+      }
+    }
+  }
+
+  &__search {
+
+    &-input {
+      border: 0px;
+      border-right: 2px solid rgb( 240, 242, 247 );
+      border-left: 2px solid rgb( 240, 242, 247 );
+      height: 54px;
+      background: #fff url("../assets/images/search-icon.png") 5% 50% no-repeat;
+
+      &::placeholder{
+        font-size: 14px;
+        font-family: 'Montserrat', arial;
+        color: rgb( 185, 190, 209 );
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+
+  }
+
+}
+
+.banner {
+  background-image: url("../assets/images/slaid_bg.png");
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    padding: 106px 0px 0px 233px;
+  }
+
+  &__header {
+    font-size: 42px;
+    font-family: 'Montserrat', arial;
+    font-weight: bold;
+    color: rgb( 255, 255, 255 );
+  }
+}
+
+.main_content {
+  background-color: #e4e5e7;
+}
