@@ -90,7 +90,7 @@ export default class App extends React.Component{
                   <div className="container">
                       <div className="row">
                           <div className="col-2">
-                              czscsz
+                              leftMenu
                           </div>
                           <div className="col-10">
                               <MainPage items={apiMagazin}/>
